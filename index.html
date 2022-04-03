@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1 class="tituloHeader">JavaScript Academy</h1>
+    </header>
+
+<!-- --------------------------------------------------------------- -->
+
+    <main>
+
+        <button class="btn_lista" id="btn_mostrar" onclick="mostrarlista()">Mostrar lista de alumnos</button>
+        <button class="btn_lista" id="btn_ocultar" style="display: none;" onclick="ocultarlista()">Ocultar lista de alumnos</button>
+        <div id="contenedorAlumnos">
+            <div id="alumnos"></div>
+        </div>
+
+<!-- --------------------------------------------------------------- -->
+
+        <div id="formulario">
+            <p class="formulario">Formulario de inscripción</p>
+            <form class="form">
+                <div class="casillero">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" class="subCasillero" id="nombre_cliente">
+                </div>
+
+                <div class="casillero">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" class="subCasillero" id="apellido_cliente">
+                </div>
+
+                <div class="casillero">
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" class="subCasillero" id="edad_cliente" placeholder="Entre 12 y 18">
+                </div>
+
+                <div class="casillero">
+                    <label for="genero">Genero:</label>
+                    <select class="subCasillero" id="genero_cliente">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="No definido">No definido</option>
+                    </select>
+                </div>
+
+                <div class="casillero">
+                    <label for="mail">Email:</label>
+                    <input type="text" name="mail" class="subCasillero" id="mail_cliente">
+                </div>
+
+                <div class="casillero">
+                    <label for="modalidad">Modalidad:</label>
+                    <select class="subCasillero" id="modalidad_cliente">
+                        <option value="Economia">Economia</option>
+                        <option value="Sociales">Sociales</option>
+                        <option value="Naturales">Naturales</option>
+                    </select>
+                </div>
+
+                <div class="botones">
+                    <button type="button" class="btn" id="enviar_datos">Enviar formulario</button>
+                    <button type="button" class="btn" id="cargar_datos">Cargar datos</button>
+                    <button type="button" class="btn" id="borrar_datos">Borrar datos</button>
+                    <button type="reset" class="btn_limpiar">Limpiar formulario</button>
+                </div>
+
+                <div id="resultado"></div>
+
+            </form>
+        </div>
+
+<!-- --------------------------------------------------------------- -->
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
